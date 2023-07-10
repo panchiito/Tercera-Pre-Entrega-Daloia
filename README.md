@@ -5,6 +5,7 @@ Hola Enzo querido!!
 El superuser que configuré es user: admin / pass: admin123 
 Las clases son: Cliente, Ayudante y Producto.
 Hay formularios para cada uno, y dos formularios de busqueda (para Clientes y Ayudantes)
+El index seria: http://127.0.0.1:8000/Trabajo/
 
 Finalmente elegí una template que operaba de manera distinta a la que vimos en el ejemplo de AppCoder pero era más linda (:.   Renegué un poco para corregir todas las rutas pero fui dándome cuenta de a poco hasta que, al menos a mi, me quedó funcionando.
 
