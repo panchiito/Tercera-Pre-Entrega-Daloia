@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Ollie landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Tercera Pre-Entrega | Modificando HTMLS a ciegas XD</title>
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'Trabajo/assets/vendors/themify-icons/css/themify-icons.css' %}">
+    
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="{% static 'Trabajo/assets/vendors/owl-carousel/css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'Trabajo/assets/vendors/owl-carousel/css/owl.theme.default.css' %}">
+
+    <!-- Bootstrap + Ollie main styles -->
+	<link rel="stylesheet" href="{% static 'Trabajo/assets/css/ollie.css' %}">
+
+</head>
+{% load static %}
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="{% static 'Trabajo/assets/imgs/brand.svg' %}" alt="" class="brand-img"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre nosotrox</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formularios">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Herencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                    <li class="nav-item ml-0 ml-lg-4">
+                        <a class="nav-link btn btn-primary" href="components">Componentes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header id="home" class="header">
+        <div class="overlay"></div>
+
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">  
+            <div class="container">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="carousel-title">Tercera Pre-Entrega<br> Coder House</h1>
+                            <button class="btn btn-primary btn-rounded">...</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="carousel-title">Tercera Pre-Entrega <br> Coder House</h1>
+                            <button class="btn btn-primary btn-rounded">...</button>
+                          </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="carousel-title">Tercera Pre-Entrega <br> Coder House</h1>
+                            <button class="btn btn-primary btn-rounded">...</button>
+                          </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+
+        <div class="infos container mb-4 mb-md-2">
+            <div class="title">
+                <h6 class="subtitle font-weight-normal">Aprendiendo</h6>
+                <h5>- a modificar HTMLS -</h5>
+                <p class="font-small">Modificando todo lo que me encuentre.</p>
+            </div>
+            <div class="socials text-right">
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <a class="d-block subtitle"><i class="ti-microphone pr-2"></i> (+34) 622-232-404</a>
+                        <a class="d-block subtitle"><i class="ti-email pr-2"></i> panchiito@hotmail.com</a>
+                    </div>
+                    <div class="col">
+                        <h6 class="subtitle font-weight-normal mb-2">La boludé del interné</h6>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link pr-1"><i class="ti-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link pr-1"><i class="ti-twitter-alt"></i></a>
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link pr-1"><i class="ti-google"></i></a>
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link pr-1"><i class="ti-pinterest-alt"></i></a>
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link pr-1"><i class="ti-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link pr-1"><i class="ti-rss"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section" id="about">
+
+        <div class="container">
+
+            <div class="row align-items-center mr-auto">
+                <div class="col-md-4">
+                    <h6 class="xs-font mb-0">Quien soy yo?</h6>
+                    <h3 class="section-title">Francisco Bruno D'Aloia.</h3>
+                    <p>Esta es mi primer web con django/HTML del curso CoderHouse. Finalmente encontre una plantilla que me cae un poco simpatica. Estoy intentando salir del loop de la pobreza asi que espero esto me sirve para mostrar lo que puedo hacer en mis comienzos como programador python!</p>
+
+                    <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/">Siganme!...</a>
+                </div>
+                <div class="col-sm-6 col-md-4 ml-auto">
+                    <div class="widget">
+                        <div class="icon-wrapper">
+                            <i class="ti-calendar"></i>
+                        </div>
+                        <div class="infos-wrapper">
+                            <h4 class="text-primary">Responsable</h4>
+                            <p>Me tomó muy a pecho mis proyectos y metas personales.                                     </p>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="icon-wrapper">
+                            <i class="ti-face-smile"></i>
+                        </div>
+                        <div class="infos-wrapper">
+                            <h4 class="text-primary">Padre</h4>
+                            <p>Creo que esto te cambia la manera de vivir las cosas y ver la vida.                           </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="widget">
+                        <div class="icon-wrapper">
+                            <i class="ti-star"></i>
+                        </div>
+                        <div class="infos-wrapper">
+                            <h4 class="text-primary">Creativo</h4>
+                            <p>Lo que más me gusta de python es la libertad para resolver problemas tomando caminos distintos.</p>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="icon-wrapper">
+                            <i class="ti-user"></i>
+                        </div>
+                        <div class="infos-wrapper">
+                            <h4 class="text-primary">English 10+</h4>
+                            <p>I have a very good level of English, both spoken and written, since I began to practice it when I was 3 years old.</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h6 class="xs-font mb-0">Sección con 3 fotitos</h6>
+            <h3 class="section-title mb-4">Probando cambiar las fotos.</h3>
+
+            <div class="row text-center">
+                <div class="col-lg-4">
+                    <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="card border-0 text-dark">
+                        <img class="card-img-top" src="{% static 'Trabajo/assets/imgs/simpsons1.jpeg' %}" alt="DOWNLOAD PAPI">
+                        <span class="card-body">
+                            <h4 class="title mt-4">Codeando &amp; Diseñando</h4>
+                            <p class="xs-font">Aca iba un texto en latin que nunca entiendo.</p>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="card border-0 text-dark">
+                        <img class="card-img-top" src="{% static 'Trabajo/assets/imgs/simpsons2.jpeg' %}" alt="DOWNLOAD PAPI">
+                        <span class="card-body">
+                            <h4 class="title mt-4">Grafic Disaign</h4>
+                            <p class="xs-font">Me arreglo tambien con el spanglish por si tu company no es del todo inglish frendly</p>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="card border-0 text-dark">
+                        <img class="card-img-top" src="{% static 'Trabajo/assets/imgs/simpsons3.jpeg' %}" alt="DOWNLOAD PAPI">
+                        <span class="card-body">
+                            <h4 class="title mt-4">Desarrollo</h4>
+                            <p class="xs-font">Te coordino los uber.</p>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="formularios">
+        <div class="container">
+            <h6 class="xs-font mb-0">Formularios para la BD</h6>
+            <h3 class="section-title pb-4">Aca los formularios.</h3>
+            <a class="nav-link btn btn-secondary" href="clientes">Clientes</a>
+            <p> . </p>
+            <a class="nav-link btn btn-secondary" href="ayudantes">Ayudantes</a>
+            <p> . </p>
+            <a class="nav-link btn btn-secondary" href="productos">Productos</a>
+            <p> . </p>
+            <a class="nav-link btn btn-secondary" href="busquedaCliente">Busqueda Clientes</a>
+            <p> . </p>
+            <a class="nav-link btn btn-secondary" href="busquedaAyudante">Busqueda Ayudante</a>
+    </section>
+
+
+
+    <section class="section" id="portfolio">
+        <div class="container">
+            <h6 class="xs-font mb-0">Herencias</h6>
+            <h3 class="section-title pb-4">Aca va el bloque que cambia para que veas que puedo trabajar con herencias *.*</h3>
+            <p> hija.html heredó de index.html y posee el bloque que cambia.</p>
+            <a class="nav-link btn btn-secondary" href="hija">Hija</a>
+        </div>
+
+        {% block contenidoQueCambia %}
+
+        {% endblock %}
+        
+        </div>
+    </section>
+
+    <section class="section bg-overlay">
+
+        <div class="container">
+            <div class="infos mb-4 mb-md-2">
+            <div class="title">
+                <h6 class="subtitle font-weight-normal">Cualquier cosa</h6>
+                <h5>Me consultan</h5>
+                <p class="font-small">Su consulta no molesta.</p>
+            </div>
+            <div class="socials">
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <a class="d-block subtitle"><i class="ti-microphone"></i> (+34) 622-232-404</a>
+                        <a class="d-block subtitle"><i class="ti-email"></i> panchiito@hotmail.com</a>
+                    </div>
+                    <div class="col">
+                        <h6 class="subtitle font-weight-normal mb-1">Social Media</h6>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link pr-1"><i class="ti-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link pr-1"><i class="ti-twitter-alt"></i></a>
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link pr-1"><i class="ti-google"></i></a>
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link pr-1"><i class="ti-pinterest-alt"></i></a>
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link pr-1"><i class="ti-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link pr-1"><i class="ti-rss"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        </div>
+    </section>
+
+    <section class="section" id="blog">
+
+        <div class="container mb-3">
+            <h6 class="xs-font mb-0">Les dejo una receta.</h6>
+            <h3 class="section-title mb-5">Sisi, una receta enzo!!</h3>
+
+            <div class="blog-wrapper">
+                <div class="img-wrapper">
+                    <img src="{% static 'Trabajo/assets/imgs/img-13.jpg' %}" alt="Papita al a cremita">
+                    <div class="date-container">
+                        <h6 class="day">29</h6>
+                        <h6 class="mun">Jun</h6> 
+                    </div>
+                </div>
+                <div class="txt-wrapper">
+                    <h4 class="blog-title">Papas a la crema:</h4>
+                    <p>2 papas (patatas) 
+                        1 diente de ajo 
+                        1/2 cda. de manteca 
+                        1/2 taza de crema de leche 
+                        1/2 taza de leche
+                        1 cda. de queso untable 
+                        Sal y pimienta <br>
+                    
+                        1. Pelar las papas y cortarlas en rodajas medianas, más o menos de 1/2 centímetro. <br>
+
+                        2. Untamos el fondo de una fuente para horno con media cucharada de manteca blanda. Sobre esta manteca, frotamos el ajo, sin piel y partido al medio. <br>
+                        
+                        3. Acomodamos en la fuente las papas, en forma de “calesita” (sí, dije calesita). <br>
+                        
+                        4. Ahora colocamos en un bol la leche, la crema de leche, el queso crema, sal, y bastante pimienta. Batimos hasta que el queso crema se disuelva. <br>
+                        
+                        5. Echamos la mezcla de crema sobre nuestras papas y llovemos con queso rallado del que te guste. Yo le puse dos quesos: uno más blando, tipo queso de campo, y otro tipo parmesano, más duro. La idea no es que las papas queden bañadas en queso (por eso no usamos uno tipo mozzarella), sino que quede una cubierta crocante sobre ellas. <br>
+                        
+                        6. Llevar a horno una media hora. Al sacarlo, se verá la parte de arriba dorada y crocante, ¡Voilà! ahí tenés tus papas a la crema gratinadas. Ahora podés mandarme este tweet:</p>
+
+                    <a href="#" class="badge badge-info">Graphic Design</a>
+
+                    <h6 class="blog-footer">
+                        <a href="https://www.paulinacocina.net/papas-a-la-crema-gratinadas/6826"><i class="ti-user"></i> Admin </a> |
+                        <a href="https://www.paulinacocina.net/papas-a-la-crema-gratinadas/6826"><i class="ti-thumb-up"></i> 213 </a> |
+                        <a href="https://www.paulinacocina.net/papas-a-la-crema-gratinadas/6826"><i class="ti-comments"></i> 123</a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section pb-0">
+
+        <div class="container">
+            <h6 class="xs-font mb-0">...</h6>
+            <h3 class="section-title mb-5">Mandame un mail</h3>
+
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-8 col-lg-7">
+
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="col form-group">
+                                <input type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="col form-group">
+                                <input type="email" class="form-control" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Tu mensaje aqui:"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-block" value="Mandame el mail!!!">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4 d-none d-md-block order-1">
+                    <ul class="list">
+                        <li class="list-head">
+                            <h6>CONTACT INFO</h6>
+                        </li>
+                        <li class="list-body">
+                            <p class="py-2">Enviame un whatsapp al numero que figura ahi:</p>
+                            <p class="py-2"><i class="ti-location-pin"></i> Me encuentro en todas partes.</p>
+                            <p class="py-2"><i class="ti-email"></i>  panchiito@hotmail.com</p>
+                            <p class="py-2"><i class="ti-microphone"></i> (+34) 622-232-404</p>
+
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+
+            <footer class="footer mt-5 border-top">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6 text-center text-md-left">
+                        <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a target="_blank" href="http://www.devcrud.com">DevCRUD</a></p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link"><i class="ti-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link"><i class="ti-twitter-alt"></i></a>
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link"><i class="ti-google"></i></a>
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link"><i class="ti-pinterest-alt"></i></a>
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link"><i class="ti-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/francisco-d-aloia-7477ab26a/" class="link"><i class="ti-rss"></i></a>
+                        </div>
+                    </div>
+                </div> 
+            </footer>
+        </div>
+    </section>
+	
+	<!-- core  -->
+    <script src="{% static 'assets/vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="{% static 'assets/vendors/bootstrap/bootstrap.affix.js' %}"></script>
+    
+    <!-- Owl carousel  -->
+    <script src="{% static 'assets/vendors/owl-carousel/js/owl.carousel.js' %}"></script>
+
+
+    <!-- Ollie js -->
+    <script src="{% static 'assets/js/Ollie.js' %}"></script>
+
+</body>
+</html>

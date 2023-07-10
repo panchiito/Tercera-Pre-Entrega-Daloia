@@ -1,0 +1,23 @@
+{% extends "Trabajo/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<div class="container">
+    <h6 class="xs-font mb-0">Contenido que cambia!</h6>
+    <h3 class="section-title pb-4">.. </h3>
+    <h4 style="color: red"> Este es el contenido en la plantilla hija.html </h4>
+
+    <p> Charles Spencer «Charlie» Chaplin (Londres, 16 de abril de 1889-Corsier-sur-Vevey, 25 de diciembre de 1977) fue un actor, humorista, compositor, productor, guionista, director, escritor y editor británico. Adquirió gran popularidad en el cine mudo gracias a las múltiples películas que realizó con su personaje Charlot.​ Se le considera un símbolo del humorismo y del cine mudo.​ Hacia finales de la Primera Guerra Mundial, era uno de los hombres más reconocidos de la cinematografía mundial. Sus padres también estuvieron relacionados con el mundo del espectáculo como él, especialmente con el género del music-hall. Chaplin debutó a la edad de cinco años, cuando reemplazó a su madre en una actuación. Para 1912, ya había actuado con la compañía teatral de Fred Karno, con quien recorrió diversos países. Su personaje Charlot debutó en 1914, en la película Ganándose el pan,​ y durante ese año rodó treinta y cinco cortometrajes, entre ellos Todo por un paraguas, Charlot en el baile y Charlot y el fuego. Sin embargo, las películas más destacadas de Chaplin fueron La quimera del oro (1925), Luces de la ciudad (1931), Tiempos modernos (1936) y El gran dictador (1940). Sus técnicas al momento de filmar incluían slapstick, mímica, pantomima y demás rutinas de comedia visual. Desde mediados de la década de 1910 dirigió la mayoría de sus películas, para 1916 también se encargó de la producción, y desde 1918 compuso la música para sus producciones. En 1919, en colaboración con Douglas Fairbanks, David Wark Griffith y Mary Pickford, fundó la United Artists.​ A lo largo de su vida, Chaplin recibió múltiples reconocimientos y nominaciones. Recibió el premio Óscar Honorífico en 1928 y 1972, fue candidato al premio Nobel de la Paz en 1948, fue nombrado caballero de la Orden del Imperio Británico en 1975​​ y se colocó una estrella con su nombre en el Paseo de la Fama de Hollywood en 1970. En 1952, tras una serie de problemas políticos que lo involucraban con el comunismo y con la realización de actividades antiestadounidenses, debió exiliarse en Suiza, donde pasó el resto de su vida. Si bien la cantidad de producciones que realizaba para aquella época había disminuido, filmó Un rey en Nueva York y La condesa de Hong Kong, sus últimos trabajos.​ Falleció el día de Navidad de 1977.​ Chaplin estuvo casado en cuatro ocasiones —con Mildred Harris, Lita Grey, Paulette Goddard y Oona O'Neill—, y se le atribuyeron noviazgos con otras ocho actrices de su época. Tres de sus hijos, Josephine, Sydney y Geraldine, también se dedicaron al espectáculo.
+
+Información extraída de Wikipedia </p>
+
+</div>
+
+<div class="container">  
+    <h3>Dejo una cancioncita de regalo que hice tiempo atras:</h3>  
+    <audio src="{% static 'Trabajo/78s.mp3' %}" controls autoplay loop></audio>
+</div>
+
+{% endblock %} 

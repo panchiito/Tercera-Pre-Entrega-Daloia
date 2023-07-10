@@ -1,0 +1,21 @@
+{% extends "Trabajo/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+<p> . </p>
+<p> . </p>
+<p> . </p>
+
+<div class="container"> 
+  <h4> Busqueda clientes: </h4>
+  <form action="/Trabajo/buscar/" method="GET">
+    <input type="text" name="apellido" id="apellido">
+    <input type="submit" value="Buscar">
+  </form>
+  <p> . </p>
+</div>
+
+ {% endblock %}

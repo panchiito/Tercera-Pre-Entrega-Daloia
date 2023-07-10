@@ -1,0 +1,22 @@
+{% extends "Trabajo/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+      {% if miFormulario.errors %}
+      <p>Estan mal los datos , revisar.</p>
+      {% endif %}
+
+      <h1> .   </h1>
+      <h1> .   </h1>
+      <p>  Hice esto por no saber como desplazar hacia abajo el formulario que me salia escondido XD  Después tirame la data. </p>
+
+      <form action="" method="POST"> {% csrf_token %}
+          <table>
+              {{ miFormulario.as_table }}
+          </table>
+          <input type="submit", value="Enviar">
+      </form>
+
+{% endblock %}

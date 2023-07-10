@@ -1,0 +1,29 @@
+{% extends "Trabajo/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+    <p> . </p>
+    <p> . </p>
+    <p> . </p>
+    <h4> Buscando en la base de datos.. </h4>  
+ 
+   {% if miFormulario.errors %}     
+   <p style="color: red;"> Están mal los datos, revisar!!</p>
+   {% endif %}
+
+   <p> Estamos buscando el: {{apellido}}</p>
+
+   {% if nombres %}
+   <ul>
+   {% for x in nombres %}
+        <li> {{x.nombre}} </li>
+        <li> {{x.apellido}} </li>
+   {% endfor %}
+   </ul>
+   {% else %}
+   <h5> No hay datos con esa descripcion </h5>
+   {% endif %}
+
+{% endblock %}
